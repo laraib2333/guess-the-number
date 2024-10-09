@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.background {
+    background-image: url(./image/img.jpg);
+    background-color: rgba(76, 80, 80, 0.33);
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 4px 5px 13px   #bab8ca;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    width: 45vw;
+    gap: .65rem;
+    line-height: 2rem;
+    width: 50vw;
+    height: 65vh;
+    border: 6px dotted #14002D;
+    border-radius: 36%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1{
+    background: none;
+    color: #14002D;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow:#cbb5b5f5 2px 2px 2px ;
+}
+input{
+background:#f3ecefb8;
+margin-bottom: 1rem;
+text-align: center;
+padding: 10px 30px ;
+transition: all 0.8s ease-in;
+width: 20vw;
+font-size:large ;
+font-style: italic;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight:bolder;
+border:none;
+border-radius: 90px  ;
+box-shadow: #14002D 2px 1px 10px 3px;
+}
+input:hover{
+    color: #f3ecefb8;
+    background-color: #14002d48;
+    box-shadow: #ccc5c8b8 2px 1px 10px 3px;
+    border:none;
+}
+p{
+    background: none;
+    color: #cbbbbb;
+    text-transform: capitalize;
+    font-size: 1.34rem;
+    font-weight: 600;
+    font-style: italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:#300606 2px 6px 2px ;
+}
+#message{
+ text-align: center;
+padding: 1rem 2rem;
+font-weight: 600;
+text-shadow: 2px 2px 2px #292729;
+}
+button{
+    padding: .945rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40%;
+    color:#c9c2d3d3 ;
+    border: none;
+    box-shadow: #14002D 2px 2px 2px ,#14002D 0px 6px 9px;
+    background:#14002d8a ;
+    transition: transform 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+    color:#14002D ;
+    border: none;
+    box-shadow: #14002D 2px 2px 2px ,#14002D 0px 6px 9px;
+    background:#c9c2d38a ;
+}
+@media(max-width:1440px){
+    #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 44vw;
+        height: 70vh;
+        border-radius:36%;
+    }
+  }
+  
+  @media(max-width:1024px){
+
+    #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60vw;
+        height: 88vh;
+        border-radius: 40%;
+    }
+
+  }
+  @media(max-width:912px){
+#container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60vw;
+        height: 87vh;
+        border-radius: 32%;
+    }
+  }
+  @media(max-width:768px){
+#container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 75vw;
+        height: 87vh;
+        border-radius: 32%;
+    }
+  } 
+  @media(max-width:425px){
+#container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+        height: 85vh;
+        border-radius: 30%;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    input{
+        padding: 1rem .5rem;
+        width: 47vw;
+        height: 4vh;
+        font-size: .88rem;
+        text-align: center;
+    }
+    input:hover{
+        color: #f3ecefb8;
+        background-color: #14002d48;
+        box-shadow: #ccc5c8b8 2px 1px 10px 3px;
+        border:none;
+    }
+    p{
+       color: #21021ed7;
+        font-size: .87rem;
+        font-weight: 900;
+        text-shadow:#aca7b5d7 2px 2px 2px ;
+    }
+    #message{
+     text-align: center;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #292729;
+    }
+    button{
+        padding: .5rem;
+        font-size: .77rem;
+        font-weight: 500;
+        transition: transform 0.3s ease;
+    }
+    button:hover{
+        transform: scale(1.1);
+        color:#14002D ;
+        border: none;
+        box-shadow: #14002D 2px 2px 2px ,#14002D 0px 6px 9px;
+        background:#c9c2d38a ;
+    }
+  }
+  @media(max-width:375px){
+     #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+        height: 90vh;
+        border-radius: 20%;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    input{
+        padding: 1rem .5rem;
+        width: 47vw;
+        height: 4vh;
+        font-size: .88rem;
+        text-align: center;
+    }
+    input:hover{
+        color: #f3ecefb8;
+        background-color: #14002d48;
+        box-shadow: #ccc5c8b8 2px 1px 10px 3px;
+        border:none;
+    }
+    p{
+       color: #21021ed7;
+        font-size: .87rem;
+        font-weight: 900;
+        text-shadow:#aca7b5d7 2px 2px 2px ;
+    }
+    #message{
+     text-align: center;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #292729;
+    }
+    button{
+        padding: .5rem;
+        font-size: .77rem;
+        font-weight: 500;
+        transition: transform 0.3s ease;
+    }
+    button:hover{
+        transform: scale(1.1);
+        color:#14002D ;
+        border: none;
+        box-shadow: #14002D 2px 2px 2px ,#14002D 0px 6px 9px;
+        background:#c9c2d38a ;
+    }
+  }
+  @media(max-width:320px){
+ 
+
+    #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+        height: 90vh;
+        border-radius: 20%;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    input{
+        padding: 1rem .5rem;
+        width: 47vw;
+        height: 4vh;
+        font-size: .88rem;
+        text-align: center;
+    }
+    input:hover{
+        color: #f3ecefb8;
+        background-color: #14002d48;
+        box-shadow: #ccc5c8b8 2px 1px 10px 3px;
+        border:none;
+    }
+    p{
+       color: #21021ed7;
+        font-size: .87rem;
+        font-weight: 900;
+        text-shadow:#aca7b5d7 2px 2px 2px ;
+    }
+    #message{
+     text-align: center;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #292729;
+    }
+    button{
+        padding: .5rem;
+        font-size: .77rem;
+        font-weight: 500;
+        transition: transform 0.3s ease;
+    }
+    button:hover{
+        transform: scale(1.1);
+        color:#14002D ;
+        border: none;
+        box-shadow: #14002D 2px 2px 2px ,#14002D 0px 6px 9px;
+        background:#c9c2d38a ;
+    }
+  }
